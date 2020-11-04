@@ -1,15 +1,15 @@
 import requests
 
 def msBotGetText():
-    botToken = "1425522778:AAEBbon4m2SLkVNBPMdX1GwBbix2cdaRO1Q"
+    botToken = ""
     send_text = 'https://api.telegram.org/bot' + botToken + '/getUpdates'
     response = requests.get(send_text)
     return response.json()
 
 def msBotSendText(botMessage):
     
-    botToken = "1425522778:AAEBbon4m2SLkVNBPMdX1GwBbix2cdaRO1Q"
-    botChatID = '-450715721'
+    botToken = ""
+    botChatID = ''
     send_text = 'https://api.telegram.org/bot' + botToken + '/sendMessage?chat_id=' \
         + botChatID + '&parse_mode=Markdown&text=' + botMessage
 
